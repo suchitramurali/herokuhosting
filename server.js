@@ -32,7 +32,7 @@ app1.post('/login',(req,res)=>{
 
 app1.post('/register',(req,res)=>{
     
-    var name=req.body.name;
+    var uname=req.body.name;
     var admsn =req.body.admission ;
     var user=req.body.username;
     var pass=req.body.password;
@@ -42,7 +42,7 @@ app1.post('/register',(req,res)=>{
     // else{
         //res.send("failed")
     //}
-   res.send(name+admsn+user+pass);
+   res.send(uname+admsn+user+pass);
 });
 
 

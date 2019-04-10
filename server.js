@@ -42,6 +42,6 @@ app1.get('/contact',(req,res)=>{
 app1.get('/about',(req,res)=>{
     res.render('about')
 });
-app1.listen(2000,()=>{
+app1.listen(process.env.PORT || 2000,()=>{
    console.log('web app running sucessfully')
 });

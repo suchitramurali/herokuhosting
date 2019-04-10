@@ -42,7 +42,7 @@ app1.post('/register',(req,res)=>{
     // else{
         //res.send("failed")
     //}
-   res.send(uname+adm+user+pass);
+   res.send(uname +adm +user +pass);
 });
 
 

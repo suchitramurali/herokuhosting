@@ -28,21 +28,21 @@ app1.post('/login',(req,res)=>{
     else{
         res.send(JSON.stringify({status:"failed"}))
     }
-})
+});
 
 app1.post('/register',(req,res)=>{
     
-    var uname=req.body.name
-    var admsno =req.body.admission 
-    var user=req.body.username
-    var pass=req.body.password
+    var uname=req.body.name;
+    var admsno =req.body.admission ;
+    var user=req.body.username;
+    var pass=req.body.password;
     //if(uname=='suchitra'&&admsno==730&&user=="admin"&&pass=="1243"){
         //res.send("success")
     //}
-   // else{
+    // else{
         //res.send("failed")
-  //}
-   res.send(uname+admsno+user+pass)
+    //}
+   res.send(uname+admsno+user+pass);
 });
 
 

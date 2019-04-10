@@ -23,10 +23,10 @@ app1.post('/login',(req,res)=>{
     var user=req.body.username
     var pass=req.body.password
     if(user=="admin"&&pass=="1243"){
-        res.send("success")
+        res.send(JSON.stringify({status:"success"}))
     }
     else{
-        res.send("failed")
+        res.send(JSON.stringify({status:"failed"}))
     }
 })
 
@@ -37,12 +37,12 @@ app1.post('/register',(req,res)=>{
     var user=req.body.username
     var pass=req.body.password
     //if(uname=='suchitra'&&admsno==730&&user=="admin"&&pass=="1243"){
-       // res.send("success")
+        //res.send("success")
     //}
    // else{
         //res.send("failed")
-   // }
-   res.send(uname,admsno,user,pass)
+  //}
+   res.send(uname+admsno+user+pass)
 });
 
 

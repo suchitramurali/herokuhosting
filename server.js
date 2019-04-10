@@ -33,7 +33,7 @@ app1.post('/login',(req,res)=>{
 app1.post('/register',(req,res)=>{
     
     var uname=req.body.name;
-    var adm =req.body.admission ;
+    var adm =req.body.admm ;
     var user=req.body.username;
     var pass=req.body.password;
     //if(uname=='suchitra'&&admsno==730&&user=="admin"&&pass=="1243"){
